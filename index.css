@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+
+}
+:root{
+    --icon-size: 30px;
+    --correct-colour: #5bea4d;
+    --partial-correct-colour: #f8d84d;
+    --wrong-colour: #787c7e;
+    --key-height:58px;
+    --key-width:43px;
+    --input-box-size: 50px;
+}
+
+nav{
+    padding: 15px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #d3d6da;
+}
+nav button{
+    border: none;
+    margin: 0px 5px;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    
+}
+.hamburger{
+    background: url(imgs/hamburger.png) no-repeat center center/cover;
+}
+.help-button{
+    background: url(imgs/help.png) no-repeat center center/cover;
+}
+.title{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+.stats{
+    background: url(imgs/statistics.png) no-repeat center center/cover;
+}
+.settings{
+    background: url(imgs/settings.png) no-repeat center center/cover;
+}
+
+.input-area{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    width: fit-content;
+    margin: 10px auto;
+}
+.display-box{
+    height: var(--input-box-size);
+    width: var(--input-box-size);
+    line-height: var(--input-box-size);
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid #d3d6da;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    width: fit-content;
+    margin: 20px auto;
+    grid-gap: 5px;    
+}
+.key{
+    grid-column: span 2;
+    height: var(--key-height);
+    width: var(--key-width);
+    background-color: #d3d6da;
+    border: 2px solid #d3d6da;
+    border-radius: 4px;
+    text-align: center;
+    line-height: var(--key-height);
+    font-weight: bold;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.gap{
+    grid-column: span 1;
+}
+.enter{
+    grid-column: span 3;
+    width: unset;
+}
+.delete{
+    grid-column: span 3;
+    width: unset;
+    background: #d3d6da url(imgs/delete.png) no-repeat center center/cover;
+    background-size: 50px;
+}
+
+.filled{
+    border-color: #878a8c;
+}
+
+.wrong{
+    background-color: var(--wrong-colour);
+    border-color:var(--wrong-colour);
+}
+.partial-correct{
+    background-color: var(--partial-correct-colour);
+    border-color: var(--partial-correct-colour);
+}
+.correct{
+    background-color: var(--correct-colour);
+    border-color: var(--correct-colour);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wordle Clone</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body tabindex="0">
+    <section>
+        <nav>
+            <div class="help">
+                <button class="hamburger"></button>
+                <button class="help-button"></button>
+            </div>
+            <div class="title">Wordle</div>
+            <div class="stat-setting">
+                <button class="stats"></button>
+                <button class="settings"></button>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="input-area">
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+            <div class="display-box"></div>
+        </div>
+    </section>
+    <section style="position: absolute; bottom: 0; width: 100%;">
+        <div class="keyboard">
+            <div class="key" onclick="addChar('Q')">Q</div>
+            <div class="key" onclick="addChar('W')">W</div>
+            <div class="key" onclick="addChar('E')">E</div>
+            <div class="key" onclick="addChar('R')">R</div>
+            <div class="key" onclick="addChar('T')">T</div>
+            <div class="key" onclick="addChar('Y')">Y</div>
+            <div class="key" onclick="addChar('U')">U</div>
+            <div class="key" onclick="addChar('I')">I</div>
+            <div class="key" onclick="addChar('O')">O</div>
+            <div class="key" onclick="addChar('P')">P</div>
+            <div class="gap"></div>
+            <div class="key" onclick="addChar('A')">A</div>
+            <div class="key" onclick="addChar('S')">S</div>
+            <div class="key" onclick="addChar('D')">D</div>
+            <div class="key" onclick="addChar('F')">F</div>
+            <div class="key" onclick="addChar('G')">G</div>
+            <div class="key" onclick="addChar('H')">H</div>
+            <div class="key" onclick="addChar('J')">J</div>
+            <div class="key" onclick="addChar('K')">K</div>
+            <div class="key" onclick="addChar('L')">L</div>
+            <div class="gap"></div>
+            <div class="enter key" onclick="confirmGuess()">ENTER</div>
+            <div class="key" onclick="addChar('Z')">Z</div>
+            <div class="key" onclick="addChar('X')">X</div>
+            <div class="key" onclick="addChar('C')">C</div>
+            <div class="key" onclick="addChar('V')">V</div>
+            <div class="key" onclick="addChar('B')">B</div>
+            <div class="key" onclick="addChar('N')">N</div>
+            <div class="key" onclick="addChar('M')">M</div>
+            <div class="delete key" onclick="deleteChar()"></div>
+        </div>
+    </section>
+</body>
+</html>
